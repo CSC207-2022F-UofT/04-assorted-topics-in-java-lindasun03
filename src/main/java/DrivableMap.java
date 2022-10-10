@@ -28,11 +28,11 @@ class DrivableMap {
      *       Return true if the Drivable was added to drivable_map.
      */
     public boolean addDrivable(String id,Drivable item){
-        if drivable_map.containsKey(id){
+        if( drivable_map.containsKey(id)){
             return false;
         }
         drivable_map.put(id,item);
-        return true
+        return true;
 
     }
 
@@ -47,8 +47,8 @@ class DrivableMap {
             if (item.getMaxSpeed()>=speed){
                 return true;
             }
-        return false;
         }
+        return false;
     }
 
 
@@ -63,7 +63,7 @@ class DrivableMap {
                 list.add((Tradable) item);
             }
         }
-        return list
+        return list;
     }
 
 
